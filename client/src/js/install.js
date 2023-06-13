@@ -7,7 +7,7 @@ window.addEventListener("beforeinstallprompt", (event) => {
   // Stash the event so it can be triggered later.
   event.preventDefault();
   deferredPrompt = event;
-  installButton.style.display = "block";
+  butInstall.classList.toggle('hidden', false);
 });
 
 // TODO: Implement a click event handler on the `butInstall` element
