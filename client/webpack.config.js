@@ -25,7 +25,24 @@ module.exports = () => {
       new HtmlWebpackPlugin({
         template: './index.html',
         title: 'J-A-T-E'
-      }), 
+      }),
+      new WebpackPwaManifest({
+        name: 'J-A-T-E',
+        short_name: 'JATE',
+        description: 'A simple text editor',
+        background_color: '#ffffff',
+        theme_color: '#2196f3',
+        start_url: '/',
+        publicPath: '/',
+        crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
+        icons: [
+          {
+            src: path.resolve('src/assets/icon.png'),
+            sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
+            destination: path.join('assets', 'icons'),
+          },
+        ],
+      }),
     ],
 
     module: {
