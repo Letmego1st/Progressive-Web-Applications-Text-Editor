@@ -13,7 +13,17 @@ window.addEventListener("beforeinstallprompt", (event) => {
 // TODO: Implement a click event handler on the `butInstall` element
 butInstall.addEventListener("click", async () => {});
 event.preventDefault();
+deferredPrompt.prompt();
+const { outcome } = await deferredPrompt.userChoice;
+console.log(`User response to the install prompt: ${outcome}`);
+deferredPrompt = null;
+installButton.style.display = "none";
+
 // Show the install prompt
+console.log("JATE was installed.", event);
+
 
 // TODO: Add an handler for the `appinstalled` event
 window.addEventListener("appinstalled", (event) => {});
+console.log("JATE was installed.", event);
+
