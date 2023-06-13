@@ -28,6 +28,9 @@ butInstall.addEventListener("click", async () => {
 
 
 // TODO: Add an handler for the `appinstalled` event
-window.addEventListener("appinstalled", (event) => {});
-console.log("JATE was installed.", event);
+window.addEventListener("appinstalled", (event) => {
+    console.log("JATE was installed.", event);
+    window.deferredPrompt = null;
+});
+
 
