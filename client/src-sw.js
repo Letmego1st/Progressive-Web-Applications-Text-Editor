@@ -1,18 +1,15 @@
 const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
-const { CacheFirst } = require('workbox-strategies');
+const { CacheFirst, StaleWhileRevalidate } = require('workbox-strategies');
 const { registerRoute } = require('workbox-routing');
 const { CacheableResponsePlugin } = require('workbox-cacheable-response');
 const { ExpirationPlugin } = require('workbox-expiration');
 const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
 
+//if (process.env.NODE_ENV === 'production') {
+  precacheAndRoute(self.__WB_MANIFEST);
+//}
 
-//import {precacheAndRoute} from 'workbox-precaching';
 
-//precacheAndRoute(self.__WB_MANIFEST);
-
-
-precacheAndRoute(self.__WB_MANIFEST);
-//const precacheManifest = self.__WB_MANIFEST || []
 
 const pageCache = new CacheFirst({
   cacheName: 'page-cache',
