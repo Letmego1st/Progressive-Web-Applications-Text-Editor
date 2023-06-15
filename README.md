@@ -87,6 +87,7 @@ The following image shows the application's IndexedDB storage:
 
 
 ## Questions:
+Feel free to contact me for any questions through the following means:
 
 - [Email](mailto:imcodong4real@gmail.com)
 - [Github Account](https://github.com/Letmego1st)
