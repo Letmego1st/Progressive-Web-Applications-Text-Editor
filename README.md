@@ -44,7 +44,7 @@ THEN I should have proper build scripts for a webpack application
 
 ## Installation
 
- This application will use the following npm packages:-
+ This application will utilize the following npm packages:
 ```
   * npm install express (express.js)
   * npm install --save-dev webpack (Webpack)
