@@ -9,6 +9,7 @@ My task is to build a text editor that runs in the browser. The app will be a si
 - [Accectance Criteria](#acceptance-criteria)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Deployment](#deployment)
 - [References](#references)
 - [Questions](#questions)
 
@@ -77,6 +78,10 @@ The following image shows the application's registered service worker:
 The following image shows the application's IndexedDB storage:
 ```
 ![](./client/src/images/19-pwa-homework-demo-04.png)
+
+## Deployment:
+
+- Heroku
 
 
 ## References:
