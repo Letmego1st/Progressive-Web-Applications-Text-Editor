@@ -84,6 +84,7 @@ The following image shows the application's IndexedDB storage:
 - Course Curriculum
 - Tutors
 - Udemy Course
+- YouTube Tutorials
 
 
 ## Questions:
