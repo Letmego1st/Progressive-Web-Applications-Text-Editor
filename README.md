@@ -10,6 +10,8 @@ My task is to build a text editor that runs in the browser. The app will be a si
 - [Installation](#installation)
 - [Usage](#usage)
 - [References](#references)
+- [Questions](#questions)
+
 
 ## Acceptance Criteria
 ```
@@ -54,7 +56,7 @@ THEN I should have proper build scripts for a webpack application
   * npm npm install idb (IndexedDB)
   ```
 
-  ## Usage
+## Usage
 
 ### Screenshots
 ```
@@ -75,7 +77,17 @@ The following image shows the application's IndexedDB storage:
 ![](./client/src/images/19-pwa-homework-demo-04.png)
 
 
+## References:
 
+- Course Curriculum
+- Tutors
+- Udemy Course
+
+
+## Questions:
+
+- [Email](mailto:imcodong4real@gmail.com)
+- [Github Account](https://github.com/Letmego1st)
 
 
 
