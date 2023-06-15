@@ -63,7 +63,7 @@ THEN I should have proper build scripts for a webpack application
 The following animation demonstrates the application functionality:
 ```
 
-![gif](./client/src/images/19-pwa-homework-demo-01.gif)
+![Alt Gif Here](./client/src/images/homework-demo-01.gif)
 
 ```
 The following image shows the application's manifest.json file:
