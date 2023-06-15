@@ -42,5 +42,41 @@ THEN I should have proper build scripts for a webpack application
 
 ## Installation
 
+ This application will use the following npm packages:-
+```
+  * npm install express (express.js)
+  * npm install --save-dev webpack (Webpack)
+  * npm install webpack-dev-server --save-dev (webpack-dev-server)
+  * npm install --save-dev webpack-pwa-manifest (WebpackPwaManifest)
+  * npm install babel (Babel)
+  * npm install --save-dev css-loader (CSS-loader)
+  * npm install concurrently --save (run multiple commands concurrently.) (Concurrently)
+  * npm npm install idb (IndexedDB)
+  ```
+
+  ## Usage
+
+### Screenshots
+```
+The following animation demonstrates the application functionality:
+```
+![](./client/src/images/19-pwa-homework-demo-01%20(1).gif)
+```
+The following image shows the application's manifest.json file:
+```
+![](./client/src/images/19-pwa-homework-demo-02.png)
+```
+The following image shows the application's registered service worker:
+```
+![](./client/src/images/19-pwa-homework-demo-03.png)
+```
+The following image shows the application's IndexedDB storage:
+```
+![](./client/src/images/19-pwa-homework-demo-04.png)
+
+
+
+
+
 
 
