@@ -20,7 +20,7 @@ module.exports = () => {
     },
     plugins: [
       // Conditionally include the InjectManifest plugin
-  !isWatchMode && new InjectManifest({
+   new InjectManifest({
     // Your plugin configuration options...
     //new InjectManifest({
       swSrc: './src-sw.js',
@@ -52,6 +52,7 @@ module.exports = () => {
     ],
 
     module: {
+      
       rules: [
         {
           test: /\.css$/i,
