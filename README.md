@@ -64,7 +64,7 @@ THEN I should have proper build scripts for a webpack application
 The following animation demonstrates the application functionality:
 ```
 
-![](./client/src/images/homework-demo-01%202.gif)
+![](./client/src/images/homework-demo-01.gif)
 
 ```
 The following image shows the application's manifest.json file:
