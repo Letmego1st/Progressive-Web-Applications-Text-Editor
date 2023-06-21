@@ -6,7 +6,7 @@ const butInstall = document.getElementById("buttonInstall");
 window.addEventListener("beforeinstallprompt", (event) => {
   // Prevent the mini-infobar from appearing on mobile
   // Stash the event so it can be triggered later.
-  //event.preventDefault();
+  event.preventDefault();
   window.deferredPrompt = event;
   butInstall.classList.toggle("hidden", false);
 
