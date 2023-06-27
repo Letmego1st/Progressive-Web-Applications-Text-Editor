@@ -2,6 +2,9 @@
   "name": "jate",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",
