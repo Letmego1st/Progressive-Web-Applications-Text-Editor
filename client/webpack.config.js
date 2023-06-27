@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
-const isWatchMode = process.argv.includes("--watch");
+//const isWatchMode = process.argv.includes("--watch");
 
 // TODO: Add and configure workbox plugins for a service worker and manifest file.
 // TODO: Add CSS loaders and babel to webpack.
@@ -29,12 +29,14 @@ module.exports = () => {
   //}),
      
       new HtmlWebpackPlugin({
-        fingerprints: false,
-        inject: true,
+        //fingerprints: false,
+        //inject: true,
         template: './index.html',
         title: 'J-A-T-E'
       }),
       new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
         name: 'J-A-T-E',
         short_name: 'JATE',
         description: 'A simple text editor',
@@ -42,7 +44,7 @@ module.exports = () => {
         theme_color: '#2196f3',
         start_url: '/',
         publicPath: '/',
-        crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
+        //crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
         icons: [
           {
             src: path.resolve('src/images/logo.png'),

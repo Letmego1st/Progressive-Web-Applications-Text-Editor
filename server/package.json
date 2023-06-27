@@ -3,6 +3,10 @@
     "version": "1.0.0",
     "description": "",
     "main": "server.js",
+    "engines": {
+        "node": "18.x",
+        "npm": "9.x"
+      },
     "scripts": {
         "server": "nodemon server.js --ignore client",
         "build": "webpack --mode production"
