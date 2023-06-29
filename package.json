@@ -2,23 +2,26 @@
   "name": "jate",
   "version": "1.0.0",
   "description": "A text editor that meets the PWA criteria and feature a number of data persistence techniques that serve as redundancy in case of options is not supported by the browser.  The application will also function offline",
+  "main": "server.js",
   "engines": {
     "node": "16.x"
   },
     "scripts": {
-    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
+      "dev": "webpack-dev-server",
+      "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
     "start": "npm run build && cd server && node server.js",
     "server": "cd server nodemon server.js --ignore client",
     "build": "cd client && npm run build",
     "install": "cd server && npm i && cd ../client && npm i",
-    "client": "cd client && npm start",
-    "node-sass": "node-sass"
+    "client": "cd client && npm start"
+    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "if-env": "^1.0.4"
     },
   "devDependencies": {
     "concurrently": "^8.2.0",
